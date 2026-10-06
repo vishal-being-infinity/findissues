@@ -6,6 +6,8 @@ export default function useClickOutside (callbackFun: ClickOutsideCallback) {
   
   const domNodeRef = useRef<HTMLDivElement | null>(null);
 
+  console.log(domNodeRef)
+
   useEffect(() => {
     
     const handler = (event: MouseEvent) => {
